@@ -1,0 +1,127 @@
+@mixin burgerBtn {
+    .burger-btn {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        padding: 1em;
+        background: none;
+    
+        border: 1px solid transparent;
+        cursor: pointer;
+        z-index: 1000;
+    
+        &:focus {
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 8px;
+        }
+    
+        &:hover {
+            .burger-btn__bars::after,
+            .burger-btn__bars::before {
+                width: 100%;
+            }
+        }
+    
+        &__box {
+            position: relative;
+            width: 40px;
+            height: 30px;
+        }
+    
+        &__bars,
+        &__bars::after,
+        &__bars::before {
+            position: absolute;
+            right: 0;
+            height: 3px;
+            content: '';
+            background-color: $white-color;
+            transition: width 0.3s;
+        }
+    
+        &__bars {
+            width: 100%;
+    
+            &::after {
+                width: 70%;
+                top: 13px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            &::before {
+                top: 27px;
+                width: 100%;
+                transition-delay: 0.1s;
+            }
+        }
+    }
+    
+    &__logo {
+        font-family: 'Caveat', cursive;
+        display: flex;
+        font-size: 2em;
+        padding: 0.5em;
+        z-index: 100;
+    }
+    
+    &__navbar {
+        display: none;
+    }
+    
+    &__navbar {
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(100%);
+        transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+        background: rgba($color: #000, $alpha: 0.85);
+        z-index: 10;
+    
+        &--active {
+            transform: translateX(0);
+        }
+    
+        &-item {
+            position: relative;
+            display: block;
+            margin: 0.5em 0;
+            padding: 0.5em 2em;
+            font-size: 2.6em;
+            color: $white-color;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+    
+            &,
+            &::after {
+                transition: 0.5s;
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 3px;
+                width: 50%;
+                background-color: $main-color;
+                transform: scaleX(0);
+            }
+    
+            &:hover::after {
+                transform: scaleX(1) translateX(-50%);
+            }
+    
+            &:hover::before {
+                transform: scaleY(1);
+            }
+        }
+    }
+}
