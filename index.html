@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://kit.fontawesome.com/8826017d3c.js" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="css/main.css" />
 		<title>Document</title>
@@ -18,7 +19,7 @@
 	<body>
 		<nav class="nav" id="nav">
 			<div class="wrapper">
-				<a href="#" class="nav__logo"><p>Barbara Rutkowska</p></a>
+				<a href="#" class="nav__logo"><p>BR_Consulting</p></a>
 				<button class="burger-btn">
 					<div class="burger-btn__box">
 						<div class="burger-btn__bars"></div>
@@ -27,15 +28,20 @@
 				<div class="nav__navbar">
 					<a href="#about-me" class="nav__navbar-item">O mnie</a
 					><a href="#services" class="nav__navbar-item">Usługi</a
-					><a href="" class="nav__navbar-item">Doświadczenie</a
-					><a href="" class="nav__navbar-item">Kontakt</a>
+					><a href="#references" class="nav__navbar-item">Referencje</a
+					><a href="#contact" class="nav__navbar-item">Kontakt</a>
 				</div>
 			</div>
 		</nav>
 		<header class="header" id="header">
 			<div class="header__shadow"></div>
 			<div class="header__content">
-				<h1>Witaj na mojej stronie!</h1>
+				<div class = "header__text">
+					<h1 class="header__text--colored">BR Consulting</h1>
+					<h1>Optymalizacja procesów w biznesie</h1>
+				</div>
+				
+				<p class="motto">"Lorem ipsum dolor sit amet consectetur."</p>
 			</div>
 		</header>
 		<section class="about-me" id="about-me">
@@ -48,7 +54,7 @@
 						alt=""
 					/>
 					<div class="about-me__content-text">
-						<h2>Kim jestem?</h2>
+						<h2 class="section-heading">Kim jestem?</h2>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Molestiae enim accusamus natus perferendis, velit quasi quaerat
@@ -64,17 +70,16 @@
 		</section>
 
 		<section class="services" id ="services">
+			
 			<div class="wrapper">
 				<h2 class="section-heading">Usługi</h2>
-
 				<div class="services__cards">
+					
 					<div class="services__card">
 						<div class="services__card-img services__card-img--first">
-							<h3 class="services__card-img-title">Usługa nr 1</h3>
-							<p class="services__card-img-info">Więcej informacji</p>
 						</div>
 						<div class="services__card-info">
-							<h3 class="services__card-info-title">Usługa nr1</h3>
+							<h3 class="services__card-info-title">Volvo Maszyny Budowlane Polska</h3>
 							<ul class="services__card-info-list">
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
@@ -82,16 +87,14 @@
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 							</ul>
-							<button class="services__card-info-btn">Zobacz</button>
+							
 						</div>
 					</div>
 					<div class="services__card">
 						<div class="services__card-img services__card-img--first">
-							<h3 class="services__card-img-title">Usługa nr 1</h3>
-							<p class="services__card-img-info">Więcej informacji</p>
 						</div>
 						<div class="services__card-info">
-							<h3 class="services__card-info-title">Usługa nr1</h3>
+							<h3 class="services__card-info-title">Volvo Maszyny Budowlane Polska</h3>
 							<ul class="services__card-info-list">
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
@@ -99,16 +102,14 @@
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 							</ul>
-							<button class="services__card-info-btn">Zobacz</button>
+							
 						</div>
 					</div>
 					<div class="services__card">
 						<div class="services__card-img services__card-img--first">
-							<h3 class="services__card-img-title">Usługa nr 1</h3>
-							<p class="services__card-img-info">Więcej informacji</p>
 						</div>
 						<div class="services__card-info">
-							<h3 class="services__card-info-title">Usługa nr1</h3>
+							<h3 class="services__card-info-title">Volvo Maszyny Budowlane Polska</h3>
 							<ul class="services__card-info-list">
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
@@ -116,14 +117,78 @@
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
 							</ul>
-							<button class="services__card-info-btn">Zobacz</button>
+							
+						</div>
+					</div>1
+					<div class="services__card">
+						<div class="services__card-img services__card-img--first">
+						</div>
+						<div class="services__card-info">
+							<h3 class="services__card-info-title">Usługa 4</h3>
+							<ul class="services__card-info-list">
+								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
+								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
+								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
+								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
+								<li class="services__card-info-list-item">Lorem ipsum dolor sit.</li>
+							</ul>
+							
 						</div>
 					</div>
 					
 				</div>
 			</div>
+			<div class="services__shadow"></div>
 		</section>
-		<div style="height: 200vh"></div>
+
+		<section class="references" id="references">
+			<div class="wrapper">
+				<h2 class="section-heading">Referencje</h2>
+				<div class="references__box">
+					<div class="references__box-item">
+						<div class="references__box-item-img"></div>
+						<div class="references__box-item-content">
+							<p>Firma 1</p>
+							<p><i class="fas fa-file-download"></i></p>
+						</div>
+					</div>
+					<div class="references__box-item">
+						<div class="references__box-item-img"></div>
+						<div class="references__box-item-content">
+							<p>Firma 2</p>
+							<p><i class="fas fa-file-download"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact" id="contact">
+			<div class="wrapper">
+				<h2 class="section-heading">Kontakt</h2>
+				<div class="contact__box">
+					<a href="tel:+48601613663"><div class="contact__tile phone-tile"><i class="fas fa-phone-alt"></i> <p>+48 601 613 669</p></div></a>
+					<a href="mailto:barbara.rutkowska1@wp.pl"><div class="contact__tile mail-tile"><i class="fas fa-at"></i><p>info@brconsulting.pl</p></div>
+					</div></a>
+				<div class="contact__box-social">
+					<div class="social__tile facebook-tile"><a href="http://facebook.com"><i class="fab fa-facebook-square"></i></a></div>
+					<div class="social__tile linkedin-tile"><a href="https://pl.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
+				</div>
+				<div class="contact__register-data">
+					<p>NIP: 12345678910</p>
+					<p>WPIS: 2021/11/02wpr</p>
+				</div>
+			</div>
+		</section>
+
+		
+		
+		<footer>
+			<div class="wrapper">
+				<p>BR Consulting 2021 &copy; by Maciej Kozłowski</p>
+			</div>
+		</footer>
+		
 		<script src="js/main.js"></script>
 	</body>
 </html>

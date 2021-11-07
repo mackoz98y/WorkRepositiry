@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -15,9 +17,10 @@ body {
 }
 
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+  padding: 0 1.5em;
 }
 
 a {
@@ -25,14 +28,11 @@ a {
   color: #fff;
 }
 
-.section-heading,
-h2 {
-  text-align: center;
-  padding: 1em;
-}
-
 .section-heading {
   font-size: 2.4em;
+  text-align: center;
+  padding: 1em;
+  color: #71A2F7;
 }
 
 p {
@@ -43,15 +43,18 @@ p {
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   height: auto;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
 .nav .wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .nav .burger-btn {
@@ -122,12 +125,9 @@ p {
 }
 
 .nav__navbar {
-  display: none;
-}
-
-.nav__navbar {
   position: fixed;
   top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +166,7 @@ p {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav__navbar-item, .nav__navbar-item::after {
@@ -214,6 +215,17 @@ p {
   z-index: -1;
 }
 
+.header__text {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.header__text--colored {
+  font-size: 1.8em;
+  color: #71A2F7;
+}
+
 .header__content {
   width: 100%;
   height: 100%;
@@ -224,18 +236,19 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.header__content h1 {
-  color: #71A2F7;
-  font-size: 3.8em;
-  padding: 1em;
+.header__content p {
+  padding: 0.5em;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #fff;
 }
 
 .about-me .wrapper {
@@ -260,6 +273,10 @@ p {
 
 .about-me__content-text p {
   font-size: 1.4em;
+}
+
+.services__shadow {
+  display: none;
 }
 
 .services__card {
@@ -350,17 +367,103 @@ p {
   border-bottom: none;
 }
 
+.contact {
+  color: #fff;
+  background-image: url("../img/email-g85e8b2bfd_640.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 3em 0 0;
+}
+
+.contact__box .contact__tile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #71A2F7;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.contact__box .contact__tile .fas {
+  font-size: 2.2em;
+}
+
+.contact__box-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .social__tile {
+  width: 49%;
+  padding: 1em;
+  font-size: 4em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact .facebook-tile {
+  background-color: #3b5998;
+}
+
+.contact .linkedin-tile {
+  background-color: #0072b1;
+}
+
+.contact__register-data {
+  margin: 2em 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: seagreen;
+  padding: 1em;
+  font-size: 1.4em;
+}
+
+footer {
+  padding: 2em;
+  font-size: 1.4em;
+  text-align: center;
+  background-color: #ddd;
+  color: #71A2F7;
+}
+
 @media (min-width: 992px) {
+  .section-heading {
+    font-size: 3em;
+  }
   .nav__logo {
-    top: 0;
-    margin: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 2.4em;
+    font-size: 2.8em;
   }
   .nav .wrapper {
     width: 90%;
@@ -372,11 +475,10 @@ p {
     position: sticky;
     background: none;
     top: 0;
-    padding: 0 3em;
+    padding: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: auto;
     height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -402,8 +504,19 @@ p {
     width: 100%;
     background-image: url("/img/title-image-big.jpg");
   }
+  .header h1 {
+    font-size: 3em;
+    padding: 0.5em;
+  }
+  .header p {
+    padding: 1.2em;
+    font-size: 3em;
+  }
   .about-me .wrapper {
     width: 80%;
+  }
+  .about-me__shadow {
+    display: block;
   }
   .about-me__content {
     display: -webkit-box;
@@ -432,9 +545,18 @@ p {
     padding: 1em;
   }
   .services {
+    position: relative;
     background-image: url(/img/conference-room-gb5a2a682c_1920.jpg);
     background-size: cover;
     background-position: center;
+  }
+  .services__shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
   .services__cards {
     display: -webkit-box;
@@ -443,9 +565,32 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .services__card {
-    width: 30%;
+    width: 25%;
+  }
+  .services .section-heading {
+    z-index: 10;
+  }
+  .contact {
+    background-image: url("../img/email-ga47b4e9af_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+  }
+  .contact .wrapper {
+    width: 60%;
+  }
+  .contact__register-data {
+    margin: 1em 0;
+    font-size: 2em;
+    padding: 1.5em;
+  }
+  .contact__box .social__tile {
+    width: 49%;
   }
 }
 /*# sourceMappingURL=main.css.map */
