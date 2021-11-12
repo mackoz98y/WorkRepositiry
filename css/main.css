@@ -372,7 +372,8 @@ p {
   background-image: url("../img/email-g85e8b2bfd_640.jpg");
   background-size: cover;
   background-position: center;
-  margin: 3em 0 0;
+  margin-top: 3em;
+  margin-bottom: 0px;
 }
 
 .contact__box .contact__tile {
@@ -582,11 +583,27 @@ footer {
     padding: 1em;
   }
   .contact .wrapper {
-    width: 60%;
+    width: 80%;
   }
   .contact__register-data {
     margin: 1em 0;
     font-size: 2em;
+    padding: 1.5em;
+  }
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__box a {
+    display: block;
+    width: 49%;
+  }
+  .contact__box a .contact__tile {
     padding: 1.5em;
   }
   .contact__box .social__tile {
